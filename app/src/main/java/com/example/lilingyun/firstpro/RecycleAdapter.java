@@ -31,10 +31,13 @@ public class RecycleAdapter extends RecyclerView.Adapter<RecycleAdapter.MyViewHo
             @Override
             public void onClick(View v) {
                 if (list.size() == 1) {
-                    Snackbar.make(v, "此条目不能删除", Snackbar.LENGTH_SHORT).show();
+                    Snackbar.make(v, "不要删除我哦", Snackbar.LENGTH_SHORT).show();
                 } else {
-                    //               删除自带默认动画
-                    removeData(position);
+                    // 删除
+                    list.remove(position);
+                    //删除动画
+                    notifyItemRemoved(position);
+                    notifyDataSetChanged();
                 }
             }
         });
@@ -46,28 +49,20 @@ public class RecycleAdapter extends RecyclerView.Adapter<RecycleAdapter.MyViewHo
     //  添加数据
     public void addData(int position) {
 //      在list中添加数据，并通知条目加入一条
-        list.add(position, "我是商品" + position);
+        list.add( "C++选手表示很扎心" + position);
         //添加动画
         notifyItemInserted(position);
     }
-    //  删除数据
-    public void removeData(int position) {
-        list.remove(position);
-        //删除动画
-        notifyItemRemoved(position);
-        notifyDataSetChanged();
-    }
-    /**
-     * ViewHolder的类，用于缓存控件
-     */
-    class MyViewHolder extends RecyclerView.ViewHolder {
-        TextView tv;
-       Button tv_delete;
+
+    /*ViewHolder的类，用于缓存控件*/
+    public class MyViewHolder extends RecyclerView.ViewHolder {
+        private TextView tv;
+        private Button tv_delete;
         //因为删除有可能会删除中间条目，然后会造成角标越界，所以必须整体刷新一下！
         public MyViewHolder(View view) {
             super(view);
             tv = view.findViewById(R.id.id_num);
-            tv_delete = view.findViewById(R.id.button7);
+            tv_delete = view.findViewById(R.id.button6);
         }
     }
 }
