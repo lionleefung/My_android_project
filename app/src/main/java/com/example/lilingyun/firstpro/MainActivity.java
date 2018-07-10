@@ -1,6 +1,7 @@
 package com.example.lilingyun.firstpro;
 
 import android.app.Activity;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.view.View;
@@ -21,16 +22,43 @@ public class MainActivity extends Activity implements OnClickListener {
         setContentView(R.layout.activity_main);
 
         //找到button按钮控件
-        button=  findViewById(R.id.button);
-        button2= findViewById(R.id.button2);
+        button = findViewById(R.id.button);
+        button2 = findViewById(R.id.button2);
         //找到ViewPager控件
         vp = findViewById(R.id.vp);
-        views=new ArrayList<View>();
+        views = new ArrayList<View>();
         //初始化view
         initView();
         //设置ViewPager的适配器
-        MyViewPagerAdapter adapter=new MyViewPagerAdapter(views, this);
+        MyViewPagerAdapter adapter = new MyViewPagerAdapter(views, this);
         vp.setAdapter(adapter);
+
+        //设置ViewPager滑动监听
+        vp.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+            @Override
+            public void onPageSelected(int arg0) {
+                switch (arg0) {
+                    case 0:
+                        //设置button的背景颜色
+                        button.setBackgroundColor(Color.BLACK);
+                        button2.setBackgroundColor(Color.WHITE);
+                        break;
+                    case 1:
+                        button.setBackgroundColor(Color.WHITE);
+                        button2.setBackgroundColor(Color.BLACK);
+                        break;
+                    default:
+                        break;
+                }
+
+            }
+            @Override
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+            }
+            @Override
+            public void onPageScrollStateChanged(int state) {
+            }
+        });
         //设置监听
         button.setOnClickListener(this);
         button2.setOnClickListener(this);
@@ -59,7 +87,5 @@ public class MainActivity extends Activity implements OnClickListener {
             default:
                 break;
         }
-
     }
-
 }
