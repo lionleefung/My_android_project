@@ -18,7 +18,7 @@
             android:layout_alignParentBottom="true"
             android:layout_alignParentEnd="true"
             android:layout_marginEnd="30dp"
-            android:background="@android:color/transparent"
+            android:background="#50000000"
             android:text="desert" />
 
         <Button
@@ -28,7 +28,7 @@
             android:layout_alignParentBottom="true"
             android:layout_alignParentStart="true"
             android:layout_marginStart="30dp"
-            android:background="@android:color/transparent"
+            android:background="#50000000"
             android:text="jungle" />
 
         <ImageView
@@ -64,7 +64,7 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentTop="true"
             android:layout_marginEnd="30dp"
-            android:background="@android:color/transparent"
+            android:background="#50000000"
             android:text="dungeon" />
 
         <Button
@@ -74,7 +74,7 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_marginStart="30dp"
-            android:background="@android:color/transparent"
+            android:background="#50000000"
             android:text="beehive" />
 
         <ImageView
@@ -83,7 +83,7 @@
             android:layout_height="32dp"
             android:layout_alignParentStart="true"
             android:layout_centerVertical="true"
-            android:layout_marginStart="49dp"
+            android:layout_marginStart="47dp"
             app:srcCompat="@drawable/beehive" />
 
         <ImageView
@@ -110,7 +110,7 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentTop="true"
             android:layout_marginEnd="30dp"
-            android:background="@android:color/transparent"
+            android:background="#50000000"
             android:text="Rain" />
 
         <Button
@@ -120,7 +120,7 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_marginStart="30dp"
-            android:background="@android:color/transparent"
+            android:background="#50000000"
             android:text="Water" />
 
         <ImageView
@@ -153,9 +153,9 @@
             android:layout_width="152dp"
             android:layout_height="60dp"
             android:layout_alignParentEnd="true"
-            android:layout_alignTop="@+id/button29"
-            android:layout_marginEnd="30dp"
-            android:background="@android:color/transparent"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="29dp"
+            android:background="#50000000"
             android:text="dungeon" />
 
         <Button
@@ -165,7 +165,7 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_marginStart="30dp"
-            android:background="@android:color/transparent"
+            android:background="#50000000"
             android:text="beehive" />
 
         <ImageView
@@ -205,7 +205,7 @@
             android:layout_alignParentBottom="true"
             android:layout_alignParentEnd="true"
             android:layout_marginEnd="30dp"
-            android:background="@android:color/transparent"
+            android:background="#50000000"
             android:text="Rain" />
 
         <Button
@@ -215,9 +215,8 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_marginStart="30dp"
-            android:background="@android:color/transparent"
+            android:background="#50000000"
             android:text="Water"
-            android:src="@drawable/water"
             android:visibility="visible" />
 
         <ImageView
@@ -287,7 +286,7 @@
             android:layout_alignParentEnd="true"
             android:layout_alignTop="@+id/button25"
             android:layout_marginEnd="30dp"
-            android:background="@android:color/transparent"
+            android:background="#50000000"
             android:text="desert" />
 
         <Button
@@ -297,7 +296,7 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_marginStart="30dp"
-            android:background="@android:color/transparent"
+            android:background="#50000000"
             android:text="jungle" />
 
         <ImageView

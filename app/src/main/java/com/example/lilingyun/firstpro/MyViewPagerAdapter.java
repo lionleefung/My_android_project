@@ -22,7 +22,6 @@ public class MyViewPagerAdapter extends PagerAdapter{
     //获得长度
     @Override
     public int getCount() {
-
         return views.size();
     }
 

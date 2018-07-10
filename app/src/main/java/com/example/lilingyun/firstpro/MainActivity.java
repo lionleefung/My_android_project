@@ -1,7 +1,6 @@
 package com.example.lilingyun.firstpro;
 
 import android.app.Activity;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.view.View;
@@ -40,12 +39,12 @@ public class MainActivity extends Activity implements OnClickListener {
                 switch (arg0) {
                     case 0:
                         //设置button的背景颜色
-                        button.setBackgroundColor(Color.BLACK);
-                        button2.setBackgroundColor(Color.WHITE);
+                        button.setBackgroundColor(50000000);
+                        button2.setBackgroundColor(50000000);
                         break;
                     case 1:
-                        button.setBackgroundColor(Color.WHITE);
-                        button2.setBackgroundColor(Color.BLACK);
+                        button.setBackgroundColor(50000000);
+                        button2.setBackgroundColor(50000000);
                         break;
                     default:
                         break;
