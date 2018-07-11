@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ffffff"
-    tools:context=".view2">
+    tools:context=".MainActivity$view2">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -40,52 +40,16 @@
 
     </LinearLayout>
 
-    <RelativeLayout
-        android:id="@+id/relativeLayout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
-    </RelativeLayout>
-
     <android.support.v7.widget.RecyclerView
         android:id="@+id/re"
         android:layout_width="match_parent"
-        android:layout_height="547dp"
+        android:layout_height="545dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
         android:background="@android:color/darker_gray"
-        android:clipChildren="false"
-        android:clipToPadding="false"
-        android:scrollbars="horizontal|vertical">
+        android:scrollbars="horizontal|vertical"
+        android:visibility="visible">
 
     </android.support.v7.widget.RecyclerView>
-
-    <Button
-        android:id="@+id/button6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="62dp"
-        android:layout_marginTop="91dp"
-        android:text="删除" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/button6"
-        android:layout_centerHorizontal="true"
-        android:text="添加" />
-
-    <TextView
-        android:id="@+id/id_num"
-        android:layout_width="89dp"
-        android:layout_height="40dp"
-        android:layout_alignBottom="@+id/button6"
-        android:layout_alignParentEnd="true"
-        android:layout_marginBottom="4dp"
-        android:layout_marginEnd="58dp"
-        android:text="TextView" />
 
 </RelativeLayout>

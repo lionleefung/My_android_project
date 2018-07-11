@@ -78,13 +78,18 @@ public class MainActivity extends Activity implements OnClickListener {
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.button2:
+                System.out.println(" ");
+                System.out.print(222);
                 vp.setCurrentItem(0);
                 break;
             case R.id.button:
+                System.out.println(" ");
+                System.out.print(333);
                 vp.setCurrentItem(1);
                break;
             default:
                 break;
         }
     }
+
 }
